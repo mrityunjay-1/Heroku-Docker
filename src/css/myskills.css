@@ -1,0 +1,75 @@
+.myskills-main-div{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+}
+.myskills-main-div-header{
+  width: 100%;
+  padding: 1.5%;
+  color: brown;
+  font-weight: bold;
+  font-size: 1.4rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2rem);
+}
+.myskills-main-div-body{
+  display: flex;
+  flex-flow: column;
+  padding: 2% 3%;
+}
+.myskills-main-div-body > div{
+  padding: 1% 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-div > div{
+  width: 45%;
+}
+
+.my-education{
+  font-size: 1.8rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.my-education > div{
+  margin: 1% 0%;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem grey;
+  width: 31%;
+  flex-flow: column;
+  align-items: center;
+}
+
+@media(max-width: 760px){
+  .myskills-main-div{
+    padding: 15% 5% 5% 5%;
+  }
+  .myskills-main-div-header{
+    padding: 3%;
+  }
+  .my-education{
+    flex-flow: column;
+  }
+  .my-education > div{
+    width: 100%;
+  }
+  .myskills-main-div-body > div{
+    flex-flow: column;
+  }
+  .skills-div > div{
+    width: 100%;
+    margin: 2% 0%;
+  }
+}

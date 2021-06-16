@@ -1,0 +1,214 @@
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: 'helvetica';
+  /* background: url('../images/main-background-img.jpg') fixed no-repeat center;
+  background-size: cover; */
+}
+
+.my-svg{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+  clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%, 85% 50%);
+}
+
+.my-svg div{
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 4%;
+   right: 4%;
+}
+
+.my-svg div a{
+   transition: all 0.3s linear;
+   color: white;
+}
+
+.my-svg div a:hover{
+  transform: scale(1.3);
+}
+
+.my-svg2{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.hamburger{
+  position: absolute;
+  top: 0.5%;
+  left: 1%;
+  font-size: 3rem;
+  display: none;
+  padding: 2%;
+}
+.class-app-main-div-child-1 .times{
+  display: none;
+  color: white;
+  position: absolute;
+  top: 3%;
+  right: 8%;
+  padding: 1% 4%;
+  background: none;
+  border: none;
+  font-size: 4rem;
+}
+
+.class-app-main-div{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
+.class-app-main-div-child-1{
+  transition: all 0.1s linear;
+  width: 15%;
+  height: 100vh;
+  background-color: rgb(168, 59, 9);
+  font-size: 1.6rem;
+  padding: 5% 0%;
+  animation: anim 0.5s linear;
+  position: relative;
+}
+
+@keyframes anim{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/********** side-nav  **************/
+.side-nav{
+  transition: all 0.3s linear;
+  width: 80%;
+  box-shadow: 0.1rem 0.1rem 0.3rem green;
+  margin: 5% 0%;
+  padding: 4% 6%;
+  background-color: lightblue;
+  border-radius: 0rem 4rem 4rem 0rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-nav:hover{
+  width: 90%;
+}
+
+
+.nav-link{
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.class-app-main-div-child-2{
+  width: 85%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+/* .class-app-main-div-child-2::-webkit-scrollbar{
+  width: 10px;
+}
+.class-app-main-div-child-2::-webkit-scrollbar-thumb{
+  background-color: cyan;
+}
+.class-app-main-div-child-2::-webkit-scrollbar-track{
+  background-color: grey;
+} */
+
+
+
+@media(max-width: 500px){
+  .my-svg{
+    clip-path: polygon(100% 70%, 100% 100%, 0% 100%, 20% 80%);
+  }
+  .my-svg div{
+    width: 40%;
+  }
+  .my-svg2{
+    background-color: brown;
+    clip-path: polygon(0% 0%, 80% 0%, 15% 20%, 0% 30%);
+    /* z-index: -1; */
+  }
+  html{
+    font-size: 50%;
+  }
+  
+  .hamburger{
+    display: block;
+  }
+  .class-app-main-div-child-1 .times{
+    display: block;
+  }
+  
+  .class-app-main-div-child-1{
+    position: absolute;
+    top: 0%; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    padding: 20% 0%;
+    z-index: 99999;
+    display: none;
+    flex-flow: column;
+  }
+  
+  .class-app-main-div-child-2{
+    width: 100%;
+  }
+  
+  .active{
+    display: flex;
+  }
+  
+  .nav-link{
+    font-size: 2rem; 
+  }
+}
+
+@media(max-width: 880px){
+  html{
+    font-size: 55%;
+  }
+  
+  .hamburger{
+    display: block;
+  }
+  .class-app-main-div-child-1 .times{
+    display: block;
+  }
+  
+  .class-app-main-div-child-1{
+    position: absolute;
+    top: 0%; right: 0; bottom: 0; left: 0;
+    width: 80%;
+    padding: 20% 0%;
+    z-index: 99999;
+    display: none;
+    flex-flow: column;
+  }
+  
+  .class-app-main-div-child-2{
+    width: 100%;
+  }
+  
+  .active{
+    display: flex;
+  }
+  
+  .nav-link{
+    font-size: 2rem; 
+  }
+}
